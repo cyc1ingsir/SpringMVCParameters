@@ -1,0 +1,74 @@
+* {margin:0; padding:0;}
+
+html {
+    font: 90%/1.3 arial,sans-serif;
+    padding:1em;
+}
+
+#messages {
+    background-color: #f8f8f8;
+    border: solid 1px #ddd;
+    margin: 1em;
+}
+
+#result {
+    background-color: #fffafa;
+    border: solid 1px #ddd;
+}
+
+label {
+    float:left;
+    width:5em;
+    text-align:right;
+    margin-right:1em;
+}
+
+legend {
+    color:#0b77b7;
+    font-size:1em;
+}
+
+input {
+    padding:0.15em;
+    width:5em;
+    border:1px solid #ddd;
+    background:#fafafa;
+    font:bold 0.95em arial, sans-serif;
+}
+
+input + span {
+    color: #c33020;
+}
+
+span ~ input {
+    border: 1px solid #c33020;
+}
+
+form {
+    background:#fff;
+    padding:1em;
+    margin:1em;
+    width: 40em;
+}
+fieldset div {
+    margin:0.3em 0;
+    clear:both;
+}
+
+.go {
+    color:#0b77b7;
+    font-weight: normal;
+    margin: 3px;
+}
+
+.go.working {
+    border: 1px solid #00a700;
+}
+
+.error {
+    border: 1px solid #c33020;
+}
+
+.go:hover {
+    background-color: #faee80;
+}
