@@ -73,7 +73,7 @@ public class HomeController {
      *  data to be posted in various ways.
      */
     @RequestMapping( value = "add1", method = RequestMethod.POST)
-    public String add1_2 ( @Valid A a, BindingResult resultA,
+    public String add1_2 ( @Valid @RequestParam(value = "a", required = false) A a, BindingResult resultA,
                          @Valid B b , BindingResult resultB,
                          Model model) {
         if (resultA.hasErrors() || resultB.hasErrors()) {
